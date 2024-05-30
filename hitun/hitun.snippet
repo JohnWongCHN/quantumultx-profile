@@ -1,0 +1,17 @@
+/*
+ * @Name: hitun.snippet
+ * @Author: John Wong
+ * @Date: 2024-05-30 08:58:27
+ * @LastEditors: John Wong
+ * @LastEditTime: 2024-05-30 09:02:57
+ * @Desc: Description
+ * @Version: v0.1
+ */
+
+
+# 重写规则配置片段包含若干条重写规则，并可以包含若干作用于 MitM 的主机名；可通过资源引用的方式使用。
+# 片段文件将保存在 Quantumult X 目录下的 Profiles 子目录中。
+# 样例可参见 https://raw.githubusercontent.com/crossutility/Quantumult-X/master/sample-import-rewrite.snippet
+
+
+^https:\/\/hitun.io\/user url script-request-header 
