@@ -1,7 +1,7 @@
 const cookieName = '海豚湾'
 const cookieKey = 'chavy_cookie_hitunio'
 const chavy = init()
-const cookieVal = JSON.stringify($request.headers)
+const cookieVal = JSON.stringify($request.headers.Cookie)
 
 if (cookieVal) {
   chavy.setdata(cookieVal, cookieKey)
