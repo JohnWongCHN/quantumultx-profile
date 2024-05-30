@@ -1,12 +1,12 @@
 const cookieName = '海豚湾'
-const cookieKey = 'chavy_cookie_qunar'
+const cookieKey = 'chavy_cookie_hitunio'
 const chavy = init()
 const cookieVal = JSON.parse(chavy.getdata(cookieKey))
 
 sign()
 
 function sign() {
-  let url = { url: `https://hitun.io/api/v1/user/sign`, headers: cookieVal }
+  let url = { url: `https://hitun.io/user/checkin`, headers: cookieVal }
   url.body = `channel=app&platform=ios`
   chavy.post(url, (error, response, data) => {
     chavy.log(`${cookieName}, data: ${data}`)
