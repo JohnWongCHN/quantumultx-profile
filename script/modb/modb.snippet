@@ -1,0 +1,16 @@
+#
+# Name: hitun.snippet
+# Author: John Wong <john-wong@outlook.com>
+# Date: 2024-05-30 08:58:27
+# LastEditors: John Wong <john-wong@outlook.com>
+# LastEditTime: 2024-06-20 09:00:27
+# Desc: 墨天轮签到配置片段，添加进重写配置中
+# Version: v0.1
+#
+
+# 重写规则配置片段包含若干条重写规则，并可以包含若干作用于 MitM 的主机名；可通过资源引用的方式使用。
+# 片段文件将保存在 Quantumult X 目录下的 Profiles 子目录中。
+# 样例可参见 https://raw.githubusercontent.com/crossutility/Quantumult-X/master/sample-import-rewrite.snippet
+
+hostname = www.modb.pro
+^https://www\.modb\.pro/api/user/checkIn$ ^POST url-and-header script-request-header modb.cookie.js
