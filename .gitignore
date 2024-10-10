@@ -3,3 +3,4 @@ cuttlefish.conf
 private_configures.md
 sample.conf
 icon/raw
+.venv
